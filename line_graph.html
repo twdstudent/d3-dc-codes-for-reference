@@ -7,9 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>D3 and Scalable Vector Graphics</title>
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" type="text/css" />
     <link rel="stylesheet" href="styles/style.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.min.css" />
 
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/crossfilter/1.3.12/crossfilter.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dc/2.1.8/dc.js"></script>
@@ -19,24 +21,38 @@
 
 <body>
 
-    <ul>
-        <li><a href="index.html">Bar Chart</a></li>
-        <li><a href="linking_graphs.html">Linking Graphs</a></li>
-        <li><a href="pie_chart.html">Pie Chart</a></li>
-        <li><a href="line_graph.html">Line Graphs</a></li>
-        <li><a href="composite_chats.html">Composite Charts</a></li>
-        <li><a href="stacked_charts.html">Stacked Charts</a></li>
-        <li><a href="scatter_plot.html">Scatter Plots</a></li>
-        <li><a href="scatter_plot_with_color.html">Scatter Plots With Colour</a></li>
-        <li><a href="link_to_data.html">Data</a></li>
-    </ul>
+    <div class="navbar navbar-inverse navbar-static-top">
+        <div class="container">
+            <!-- below is the burger drop down icon -->
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!-- below will collapse when on mobile -->
+            <div class="collapse navbar-collapse navHeaderCollapse ">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Bar Chart</a></li>
+                    <li><a href="linking_graphs.html">Linking Graphs</a></li>
+                    <li><a href="pie_chart.html">Pie Chart</a></li>
+                    <li><a href="line_graph.html">Line Graphs</a></li>
+                    <li><a href="composite_chats.html">Composite Charts</a></li>
+                    <li><a href="stacked_charts.html">Stacked Charts</a></li>
+                    <li><a href="scatter_plot.html">Scatter Plots</a></li>
+                    <li><a href="scatter_plot_with_color.html">Scatter Plots/Colour</a></li>
+                    <li><a href="link_to_data.html">Data</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
     <h1>Data Visualisation</h1>
 
     <h2>DC LineChart</h2>
 
-    <div>
-        <h3>Total Spend Per Month</h3>
+    <h3>Total Spend Per Month</h3>
+    
+    <divclass="chart-here">
         <div id="chart-here"></div>
     </div>
 
